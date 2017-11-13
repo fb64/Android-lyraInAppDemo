@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Lyra Demo</string>
+    <string name="test">TEST</string>
+    <string name="powered_by_lyra">Powered by Lyra</string>
+    <string name="pay_with_payzen">Pay with PayZen</string>
+    <string name="loading">Chargement</string>
+    <string name="amount">Amount</string>
+    <string name="email">Email</string>
+    <string name="email_confirmation">An email confirmation have been sent to %1$s</string>
+    <string name="error_occured">An error occurs : %1$s</string>
+    <string name="payment_success">Payment successful</string>
+    <string name="payment_error">Payment failed</string>
+    <string name="invalid_input">Invalid input</string>
+    <string name="invalid_email">Invalid Email</string>
+    <string name="invalid_amount">Amount must be lower than 51</string>
+    <string name="error_appears">Error appears</string>
+    <string name="production">PRODUCTION</string>
+    <string name="back_to_home">Back to home</string>
+
+    <string name="language">Your language</string>
+    <string name="french">French</string>
+    <string name="spanish">Spanish</string>
+    <string name="english">English</string>
+    <string name="finddetails">Please find details here</string>
+
+    <string-array name="payment_type_mode">
+        <item>ALL</item>
+        <item>CB</item>
+        <item>VISA</item>
+        <item>MASTERCARD</item>
+    </string-array>
+    <string name="all">All</string>
+    <string name="areyousureexit">Are you sure you want to exit?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="refused_payment">Refused payment</string>
+    <string name="abandonned_payment">Abandoned payment</string>
+    <string name="expired_payment">Expired payment</string>
+    <string name="network_error_payment">Unavailable operation due to connectivity failure</string>
+
+</resources>

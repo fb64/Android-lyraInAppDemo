@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="bluelyra">#3775ba</color>
+    <color name="bluelyrawhite">#4ca1ff</color>
+    <color name="bluelyradark">#224a78</color>
+    <color name="bluelyradark2">#293c7a</color>
+
+    <color name="orange">#ccfc6d00</color>
+    <color name="green">#a2ff77</color>
+
+    <color name="statusbar">#263770</color>
+    <color name="red">#ff0000</color>
+
+</resources>
