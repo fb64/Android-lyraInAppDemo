@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lyra Demo</string>
+    <string name="pay_with_payzen">Pagar con PayZen</string>
+    <string name="amount">Importe</string>
+    <string name="email">Email</string>
+    <string name="email_confirmation">Un email de confirmation ha sido enviado a %1$s</string>
+    <string name="error_occured">Error en el pago : %1$s</string>
+    <string name="payment_success">Pago realizado</string>
+    <string name="powered_by_lyra">Impulsado por Lyra</string>
+    <string name="invalid_input">Entrada invalida</string>
+    <string name="invalid_email">Email no válido</string>
+    <string name="invalid_amount">Le importe debe ser inferior a 51 Euros</string>
+    <string name="error_appears">Ha ocurrido un error</string>
+    <string name="loading">Cargando</string>
+    <string name="language">Su lenguaje</string>
+    <string name="test">PRUEBA</string>
+    <string name="production">PRODUCCION</string>
+    <string name="back_to_home">Volver al inicio</string>
+    <string name="french">Francés</string>
+    <string name="spanish">Español</string>
+    <string name="english">Inglés</string>
+    <string name="finddetails">Encuentre los detalles aquí</string>
+    <string name="all">Todas</string>
+    <string name="areyousureexit">"¿Seguro que quieres salir? "</string>
+    <string name="yes">Sí</string>
+    <string name="no">No</string>
+
+
+    <string name="refused_payment">Pago rechazado</string>
+    <string name="abandonned_payment">Pago cancelado</string>
+    <string name="expired_payment">Pago expirado</string>
+    <string name="network_error_payment">Operacion imposible, problema de conectividad</string>
+</resources>
